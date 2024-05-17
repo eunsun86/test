@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="euc-kr" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IUCP</title>
+		<script src="../static/js/jquery-3.6.0.min.js"></script>
+		<script src="../static/js/datepicker.min.js"></script>		
+		<script src="../static/js/datepicker.ko-KR.js"></script>		
+		<script src="../static/js/iucp_pub.js"></script>
+		<link rel="stylesheet" href="../static/css/iucp.css" />
+	</head>
+	<body>
+
+		<!--[S] iucp-root-->
+		<div class="iucp-root">
+
+			<!--[S] iucp-header-->
+			<div class="iucp-header">
+				<!--[D] 생략, html/00_sub_layout참고-->		
+			</div>
+			<!--//[S] iucp-header-->
+
+			<!--[S] iucp-group-aside-con-->
+			<div class="iucp-group-aside-con">
+				
+				<!--[S] iucp-aside-->
+				<div class="iucp-aside">
+					<p class="tit-d1">기업수요</p>
+					<ul class="d1">
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">키워드관리</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">MY PAGE</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">기업산학협력신청</button>
+						</li>												
+						<li class="active"> <!--[D]active-->
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">기업산학협력접수</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">기업수요등록</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">기업수요접수</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">기업수요매칭</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">매칭현황</button>
+						</li>
+						<li>
+							<!--[D]서브없을시, class="no-sub", onClick="..." -->
+							<button class="no-sub" type="button" onClick="location.href='#'">산학협력통계</button>
+						</li>						
+					</ul>
+				</div>
+				<!--//[S] iucp-aside-->
+
+				<!--[S] iucp-con-->
+				<div class="iucp-con">
+
+					<!--[S] iucp-main-->
+					<div class="iucp-main">
+
+						<div class="breadcrumb">
+							<span class="item">홈</span>
+							<span class="item">기업수요</span>
+							<span class="item">기업산학협력접수</span>
+						</div>
+
+						<p class="tit-pagetitle">기업산학협력접수</p>
+
+						<div class="td-item-group left gap4 mb12">
+							<input name="" id="" class="td-item ip-txt w220" type="text" value="" placeholder="제목">	
+							<button class="td-item btn btn-big btn-db w68" type="button">검색</button>
+						</div>							
+
+						<img class="w100p h100p" src="../static/img/dummy/dummy_grid.jpg" alt=""><!--[D]그리드 영역-->
+						
+						<div class="pagi mt8">
+							<div class="group">
+								<button type="button" class="item first">처음</button>
+								<button type="button" class="item prev">이전</button>
+							</div>
+							<div class="group">
+								<button type="button" class="item">1</button>
+								<button type="button" class="item active">2</button>
+								<button type="button" class="item">3</button>
+								<button type="button" class="item">4</button>
+								<button type="button" class="item">5</button>
+								<button type="button" class="item">99</button>
+								<button type="button" class="item">999</button>
+								<button type="button" class="item">9999</button>
+							</div>
+							<div class="group">
+								<button type="button" class="item last">끝</button>
+								<button type="button" class="item next">다음</button>
+							</div>
+						</div>
+
+						<div class="bt-ed pt8 mt8 mb24">
+							<div class="btn-group right">
+								<button class="btn btn-big btn-g-outline" type="button">대기</button>
+								<button class="btn btn-big btn-g-outline" type="button">접수</button>
+								<button class="btn btn-big btn-g-outline" type="button">처리완료</button>
+								<button class="btn btn-big btn-g-outline" type="button">삭제</button>
+								<button class="btn btn-big btn-g-outline" type="button">메모입력</button>
+							</div>							
+						</div>
+
+					</div>
+					<!--//[S] iucp-main-->
+
+					<!--[S] iucp-footer-->
+					<div class="iucp-footer">
+						<ul>
+							<li>
+								<a href="">개인정보처리취급방침</a>
+							</li>
+							<li>
+								<a href="">이메일 수집거부</a>
+							</li>							
+						</ul>
+						<p class="copy">Copyright(c) 2023 Webcash corp. All Rights reserved.</p>
+						
+					</div>					
+					<!--//[S] iucp-footer-->
+
+				</div>
+				<!--//[S] iucp-con-->
+
+			</div>
+			<!--//[S] iucp-group-aside-con-->
+
+		</div>
+		<!--//[S] iucp-root-->
+
+	</body>
+</html>

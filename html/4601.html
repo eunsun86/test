@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="euc-kr" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IUCP</title>
+		<script src="../static/js/jquery-3.6.0.min.js"></script>
+		<script src="../static/js/datepicker.min.js"></script>		
+		<script src="../static/js/datepicker.ko-KR.js"></script>		
+		<script src="../static/js/iucp_pub.js"></script>
+		<link rel="stylesheet" href="../static/css/iucp.css" />
+	</head>
+	<body>
+
+		<!--[S] iucp-root-->
+		<div class="iucp-root">
+
+			<!--[S] iucp-header-->
+			<div class="iucp-header"></div>
+			<!--//[S] iucp-header-->
+
+			<!--[S] iucp-group-aside-con-->
+			<div class="iucp-group-aside-con">
+				
+				<!--[S] iucp-aside-->
+				<div class="iucp-aside"></div>
+				<!--//[S] iucp-aside-->
+
+				<!--[S] iucp-con-->
+				<div class="iucp-con">
+
+					<!--[S] iucp-main-->
+					<div class="iucp-main">
+						[D] 이곳은 컨텐츠 영역입니다.
+
+							<div class="modal w820 active"> <!--[D]active-->
+								<div class="inner">
+									<div class="modal-header">
+										<p class="tit">교원실적정보보기</p>
+										<button class="btn-close" type="button">닫기</button>
+									</div>
+									<div class="modal-con">
+										<p class="txt-01 fw-600 fs-15 fc-111 mb12">교원정보</p>
+
+										<table class="data-table form-table type-dual tlf mb24"> <!--[D20231218] .w500클래스 제거, .tlf클래스 추가-->
+											<!-- <caption>표 제목</caption> -->
+											<colgroup>
+												<col width="104px">
+												<col width="">
+												<col width="104px">
+												<col width="">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th class="ta-left">교직원번호</th>
+													<td class="ta-left">5001</td>
+													<th class="ta-left">성명</th>
+													<td class="ta-left">김이박</td>
+												</tr>
+												<tr>
+													<th class="ta-left">학과</th>
+													<td class="ta-left">컴퓨터공학</td>
+													<th class="ta-left">직급</th>
+													<td class="ta-left">직급표기</td>
+												</tr>
+												<tr>
+													<th class="ta-left">이메일</th>
+													<td class="ta-left">abcd1234@email.com</td>
+													<th class="ta-left">전화번호</th>
+													<td class="ta-left">000-0000-0000</td>
+												</tr>
+												<tr>
+													<th class="ta-left">임용일</th>
+													<td class="ta-left">학위</td>
+													<th class="ta-left">세부전공명</th>
+													<td class="ta-left">전공명</td>
+												</tr>
+												<tr>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+												</tr>
+												<tr>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+												</tr>
+												<tr>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+												</tr>
+												<tr>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+													<th class="ta-left">심사가능분야1</th>
+													<td class="ta-left">심사가능분야</td>
+												</tr>																																										
+											</tbody>
+										</table>	
+										
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">연구과제 3건</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="50px">
+														<col width="">
+														<col width="110px">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">과제번호</th>
+															<th class="ta-center" scope="col">과제명</th>
+															<th class="ta-center" scope="col">연구기간</th>
+															<th class="ta-center" scope="col">연구비</th>
+															<th class="ta-center" scope="col">연구비지원사업</th>
+															<th class="ta-center" scope="col">연구비지원기관</th>
+															<th class="ta-center" scope="col">연구비지원구분</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">20230101</td>
+															<td class="ta-left">AI를 통한 자연어 검색</td>
+															<td class="ta-center">2023.01.01 ~ 2023.12.31</td>
+															<td class="ta-center">10,000,000</td>
+															<td class="ta-center">기본연구비사업</td>
+															<td class="ta-center">한국연구재단</td>
+															<td class="ta-center">행정부</td>
+														</tr>
+														<tr>
+															<td class="ta-center">11</td>
+															<td class="ta-center">20230101</td>
+															<td class="ta-left">AI를 통한 자연어 검색</td>
+															<td class="ta-center">2023.01.01 ~ 2023.12.31</td>
+															<td class="ta-center">10,000,000</td>
+															<td class="ta-center">기본연구비사업</td>
+															<td class="ta-center">한국연구재단</td>
+															<td class="ta-center">행정부</td>
+														</tr>
+														<tr>
+															<td class="ta-center">111</td>
+															<td class="ta-center">20230101</td>
+															<td class="ta-left">AI를 통한 자연어 검색</td>
+															<td class="ta-center">2023.01.01 ~ 2023.12.31</td>
+															<td class="ta-center">10,000,000</td>
+															<td class="ta-center">기본연구비사업</td>
+															<td class="ta-center">한국연구재단</td>
+															<td class="ta-center">행정부</td>
+														</tr>																										
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">논문 10건</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="">
+														<col width="150px">
+														<col width="80px">
+														<col width="80px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">논문명</th>
+															<th class="ta-center" scope="col">학술지명</th>
+															<th class="ta-center" scope="col">게재년월</th>
+															<th class="ta-center" scope="col">첨부파일</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-left">딥러닝 예측 결과 정보를 적용하는 복합 미생물배양기를 위한 딥러닝 구조 개발</td>
+															<td class="ta-center">전기전자학회논문지</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-center">2</td>
+															<td class="ta-left">쳇 GPT 활용</td>
+															<td class="ta-center">전기전자학회논문지</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-left">AI를 통한 자연어 검색</td>
+															<td class="ta-center">전기전자학회논문지</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>																												
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">저서</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="150px">
+														<col width="">
+														<col width="80px">
+														<col width="80px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">ISBN번호</th>
+															<th class="ta-center" scope="col">학술지명</th>
+															<th class="ta-center" scope="col">게재년월</th>
+															<th class="ta-center" scope="col">첨부파일</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">978-89-374-9157-3</td>
+															<td class="ta-left">전기전자학회논문지</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-center">2</td>
+															<td class="ta-center">978-89-374-9157-3</td>
+															<td class="ta-left">전기전자학회논문지</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-center">3</td>
+															<td class="ta-center">978-89-374-9157-3</td>
+															<td class="ta-left">전기전자학회논문지</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>																												
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">학술발표대회</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="">
+														<col width="">
+														<col width="80px">
+														<col width="80px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">학술대회명</th>
+															<th class="ta-center" scope="col">논문</th>
+															<th class="ta-center" scope="col">발행년월</th>
+															<th class="ta-center" scope="col">지역서구분</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-left">2023년도 동계종합학술발표회</td>
+															<td class="ta-center">영상 데이터 개인정보 영역 국출 최저</td>
+															<td class="ta-center">2023-10</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-center">2</td>
+															<td class="ta-left">쳇 GPT 활용</td>
+															<td class="ta-center"></td>
+															<td class="ta-center"></td>
+															<td class="ta-center"></td>
+														</tr>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-left">딥러닝 예측 결과 정보를 적용하는 복합 미생물배양기를 위한 딥러닝 구조 개발</td>
+															<td class="ta-center"></td>
+															<td class="ta-center"></td>
+															<td class="ta-center"></td>
+														</tr>																												
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">특허</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">출원일자</th>
+															<th class="ta-center" scope="col">취득구분</th>
+															<th class="ta-center" scope="col">지식재산권명</th>
+															<th class="ta-center" scope="col">출원/등록국가</th>
+															<th class="ta-center" scope="col">등록일자</th>
+															<th class="ta-center" scope="col">기술이전명</th>
+															<th class="ta-center" scope="col">이전기업</th>
+															<th class="ta-center" scope="col">이전금액</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">2023.12.01</td>
+															<td class="ta-center">실용신안</td>
+															<td class="ta-center">AI를 통한...</td>
+															<td class="ta-center">대한민국</td>
+															<td class="ta-center">2023.12.03</td>
+															<td class="ta-center">투명전극필름 제조장치 및 제조방법</td>
+															<td class="ta-center">(주)웹케시</td>
+															<td class="ta-center">10,000,000</td>
+														</tr>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">2023.12.01</td>
+															<td class="ta-center">실용신안</td>
+															<td class="ta-center">AI를 통한...</td>
+															<td class="ta-center">대한민국</td>
+															<td class="ta-center">2023.12.03</td>
+															<td class="ta-center">투명전극필름 제조장치 및 제조방법</td>
+															<td class="ta-center">(주)웹케시</td>
+															<td class="ta-center">10,000,000</td>
+														</tr>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">2023.12.01</td>
+															<td class="ta-center">실용신안</td>
+															<td class="ta-center">AI를 통한...</td>
+															<td class="ta-center">대한민국</td>
+															<td class="ta-center">2023.12.03</td>
+															<td class="ta-center">투명전극필름 제조장치 및 제조방법</td>
+															<td class="ta-center">(주)웹케시</td>
+															<td class="ta-center">10,000,000</td>
+														</tr>																																														
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">캡스톤디자인</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="50px">
+														<col width="200px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">연도</th>
+															<th class="ta-center" scope="col">교과목코드</th>
+															<th class="ta-center" scope="col">교과목명</th>
+															<th class="ta-center" scope="col">학점</th>
+															<th class="ta-center" scope="col">사업자등록번호</th>
+															<th class="ta-center" scope="col">기업명</th>
+															<th class="ta-center" scope="col">프로젝트내용</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">2023</td>
+															<td class="ta-center">1001</td>
+															<td class="ta-center">캡스톤디자인교과목명</td>
+															<td class="ta-center">4</td>
+															<td class="ta-center">214-86-35102</td>
+															<td class="ta-center">(주)웹케시</td>
+															<td class="ta-center">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리</td>
+														</tr>																		
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">창업활동</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="80px">
+														<col width="80px">
+
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">사업자등록번호</th>
+															<th class="ta-center" scope="col">기업명</th>
+															<th class="ta-center" scope="col">업종</th>
+															<th class="ta-center" scope="col">연월</th>
+															<th class="ta-center" scope="col">활동내역</th>
+															<th class="ta-center" scope="col">첨부파일</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">214-86-35102</td>
+															<td class="ta-center">(주) 웹케시</td>
+															<td class="ta-center">IT</td>
+															<td class="ta-center">이러저러한 내용으로 네트워크 활동</td>
+															<td class="ta-center">2023.12</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>																		
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco mb24 active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">네트워크</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px"> 
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="80px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">연월</th>
+															<th class="ta-center" scope="col">네트워크 구분</th>
+															<th class="ta-center" scope="col">활동내역</th>
+															<th class="ta-center" scope="col">첨부파일</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">2023.12</td>
+															<td class="ta-center">학과산학협력위원회</td>
+															<td class="ta-center">이러저러한 내용으로 네트워크 활동</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>																		
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>
+									<div class="pn type-tit type-acco my-acco  active"> <!--[D]active:펼쳐진 상태-->
+										<div class="pn-tit">컨설팅</div>
+										<button class="pn-btn my-acco-ctr" type="button">
+											<span class="txt-fold">접기</span>
+											<span class="txt-unfold">펼치기</span>
+										</button>
+										<div class="pn-con my-acco-con">
+											<!--[D20231218]HTML로 수정-->
+											<div class="data-table-wrap w100p">
+												<table class="data-table">
+													<colgroup>
+														<col width="45px">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="">
+														<col width="80px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="ta-center" scope="col">순번</th>
+															<th class="ta-center" scope="col">사업자등록번호</th>
+															<th class="ta-center" scope="col">기업명</th>
+															<th class="ta-center" scope="col">업종</th>
+															<th class="ta-center" scope="col">컨설팅연월</th>
+															<th class="ta-center" scope="col">컨설팅내용</th>
+															<th class="ta-center" scope="col">첨부파일</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="ta-center">1</td>
+															<td class="ta-center">214-86-35102</td>
+															<td class="ta-center">(주)웹케시</td>
+															<td class="ta-center">IT</td>
+															<td class="ta-center">2023.12</td>
+															<td class="ta-center">이러저러한 내용으로 컨설팅</td>
+															<td class="ta-center">
+																<button class="btn btn-icon icon-download" type="button">다운</button>
+															</td>
+														</tr>																		
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+									</div>																																
+
+									</div>
+									<div class="modal-footer">
+										<div class="btn-group right">
+											<button class="btn btn-big btn-g-outline" type="button">닫기</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<div class="dim active"></div><!--[D]active-->						
+
+					</div>
+					<!--//[S] iucp-main-->
+
+					<!--[S] iucp-footer-->
+					<div class="iucp-footer"></div>					
+					<!--//[S] iucp-footer-->
+
+				</div>
+				<!--//[S] iucp-con-->
+
+			</div>
+			<!--//[S] iucp-group-aside-con-->
+
+		</div>
+		<!--//[S] iucp-root-->
+
+	</body>
+</html>

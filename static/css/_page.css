@@ -1,0 +1,97 @@
+@charset "euc-kr";
+/*
+ 파일 개요
+ ---------------------------------------------------------------------
+ @ 목적 : [한밭대 산학협력 플랫폼] 상세 페이지 스타일 정의
+ @ 작성 : GRIDA Publishing Team.
+ @ 최종 : 2024.02.20.00:00
+ @ 메모 : 앞에서 _component, _layout으로 커버되지 않는 각 페이지마다 유니크한 부분은 이곳에서 따로 정의한다.
+*/
+
+/*[1000] 메인화면*/
+/*1000. 진행현황판*/
+.iucp-root.startpage { position: relative; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; height: 100vh; min-width: 1180px; } 
+.iucp-root.startpage .iucp-header { background: rgba(255, 255, 255, 0.2); border-bottom: 0; } 
+.iucp-root.startpage .iucp-header>.inner { position: relative; width: 1180px; margin: 0 auto; } 
+.iucp-root.startpage .iucp-header .left-area { width: auto; height: auto; } 
+.iucp-root.startpage .iucp-header .left-area>.logo { position: absolute; top: 20px; left: auto; display: inline-block; } 
+.iucp-root.startpage .iucp-header .right-area .iucp-gnb { margin: 0 auto; } 
+.iucp-root.startpage .iucp-header .right-area .iucp-gnb>ul>li>a { color: #fff; } 
+.iucp-root.startpage .iucp-header .right-area .iucp-util { position: absolute; top: 0; right: 0; } 
+.iucp-root.startpage .iucp-con .iucp-main .main-visual { position: fixed; z-index: 10; top: 0; left: 0; width: 100%; height: 100%; background-position: 50% 0; background-size: cover; background-color: #111f2a; } 
+
+.iucp-root.startpage .iucp-con .iucp-main .main-visual:after { content: ""; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, 0); } 
+.iucp-root.startpage .iucp-con .iucp-main .copy-apply { position: absolute; z-index: 20; top: calc(50% - 40px); left: 50%; transform: translate(-50%, -50%); width: 1180px; } 
+/*
+.iucp-root.startpage .iucp-con .iucp-main .copy { font-size: 58px; color: #fff; text-align: center; } 
+.iucp-root.startpage .iucp-con .iucp-main .copy>span { display: block; margin-bottom: 10px; } 
+.iucp-root.startpage .iucp-con .iucp-main .copy>em { display: block; font-weight: 900; } 
+*/
+.iucp-root.startpage .iucp-con .iucp-main .apply { position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 200px; height: 66px; line-height: 66px; color: #fff; font-weight: 600; font-size: 22px; text-decoration: none; text-align: center; background: #0f90ab; display: flex; justify-content: center; align-items: center; column-gap: 8px; padding-left: 20px; box-sizing: border-box; } 
+.iucp-root.startpage .iucp-con .iucp-main .apply:after { content: ""; display: block; width: 20px; height: 20px; background: url(../img/icon/ic_apply_arrow.svg) no-repeat 0 0; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board { position: absolute; z-index: 20; left: 0; bottom: 0; width: 100%; height: 146px; background: #fff; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul { display: flex; width: 1180px; height: 100%; margin: 0 auto; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li { position: relative; flex-grow: 1; height: 100%; text-align: center; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li .tit-data { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; padding: 5px 0; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li .tit-data:after { position: absolute; top: 0; right: 0; content: ""; display: block; width: 1px; height: 100%; background-color: #ededed; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li.tot .tit-data:after,
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li:last-of-type .tit-data:after { display: none; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li .tit { display: block; font-size: 17px; font-weight: 400; color: #666; margin-bottom: 13px; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li .data { font-size: 29px; font-weight: 900; color: #2b2b2b; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li.tot { flex-grow: 0; background: #d1986e; width: 200px; height: 200px; top: -54px; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li.tot .tit { color: #fff; font-weight: 600; font-size: 22px; } 
+.iucp-root.startpage .iucp-con .iucp-main .status-board>ul>li.tot .data { color: #fff; font-weight: 900; font-size: 44px; } 
+
+/*1100. 로그인*/
+.login-wrap { /* border: 1px dashed red; */
+ width: 420px; margin: 133px auto 0 auto; } 
+.btn-login1 { display: block; font-size: 17px; color: #fff; font-weight: 600; background: #0f90ab; height: 56px; line-height: 56px; border-radius: 4px; text-decoration: none; text-align: center; } 
+.btn-login2 { display: block; font-size: 17px; color: #fff; font-weight: 600; background: #33628b; width: 104px; height: 120px; line-height: 120px; border-radius: 4px; text-decoration: none; text-align: center; } 
+
+.login-form { display: flex; column-gap: 16px; } 
+.login-form .login-form-left { flex-grow: 0; flex-shrink: 0; flex-basis: 0; } 
+.login-form .login-form-left .ip-txt { height: 56px; border: 0; /* background: lightyellow; */
+ font-size: 15px; padding: 19px 12px; } 
+.login-form .login-form-left .ip-txt:first-of-type { margin-bottom: 8px; } 
+.login-form .btn-login2 {}
+
+/*1200. 약관동의*/
+.agree-wrap { width: 1180px; margin: 0 auto; } 
+.agree-detail { overflow-y: auto; border: 1px solid #e3e3e3; background: #fff; padding: 16px; height: 174px; box-sizing: border-box; font-size: 13px; font-weight: 500; color: #333; line-height: 1.5; margin-bottom: 12px; } 
+
+/*2000. 사업단안내 - 사업단 안내*/
+.contents-2000 { display: flex; column-gap: 80px; width: 880px; } 
+.contents-2000>div { flex-grow: 1; flex-shrink: 0; flex-basis: 0; border: 1px solid #3a6c98; } 
+.contents-2000>div .tit { background: #3a6c98; font-size: 15px; font-weight: 500; color: #fff; height: 52px; line-height: 52px; text-align: center; } 
+.contents-2000>div ul { padding: 20px; } 
+.contents-2000>div ul li { position: relative; font-size: 13px; font-weight: 500; color: #666; margin-bottom: 8px; padding-left: 10px; } 
+.contents-2000>div ul li:last-of-type { margin-bottom: 0; } 
+.contents-2000>div ul li:after { position: absolute; top: 50%; left: 0; transform: translateY(-50%); content: ""; display: block; width: 4px; height: 4px; border-radius: 50%; background: #666; } 
+
+/*2100. 사업단안내 - ILO 안내*/
+.ul-2100 { text-align: center; } 
+.ul-2100 li { display: inline-block; position: relative; font-size: 13px; font-weight: 500; color: #999; margin-right: 10px; padding-left: 5px; } 
+.ul-2100 li:last-of-type { margin-right: 0; } 
+.ul-2100 li:after { position: absolute; top: 50%; left: 0; transform: translateY(-50%); content: ""; display: block; width: 2px; height: 2px; border-radius: 50%; background: #666; } 
+
+/*4000.키워드관리*/
+.nodata-4000 { position: relative; height: 460px; text-align: center; border-top: 1px solid #1d1d1d; } 
+.nodata-4000>.inner { position: absolute; top: 50%; left: 0; width: 100%; } 
+
+/*6002. 공지사항 - 게시판 상세조회*/
+.board-main { font-size: 13px; font-weight: 500; color: #666; line-height: 1.5; padding-top: 15px; padding-bottom: 20px; } 
+.reply-box { } 
+.reply-box .reply-list {
+}
+.reply-box .reply-list .reply-item { position: relative; padding: 15px 12px; border-bottom: 1px solid #ededed; } 
+.reply-box .reply-info { display: flex; column-gap: 10px; margin-bottom: 12px; } 
+.reply-box .reply-info .reply-name { font-size: 13px; font-weight: 500; color: #999; } 
+.reply-box .reply-info .reply-dpt { font-size: 13px; font-weight: 500; color: #ccc; } 
+.reply-box .reply-info .reply-date { font-size: 13px; font-weight: 500; color: #ccc; } 
+.reply-box .reply-txt { font-size: 13px; font-weight: 500; color: #333; } 
+.reply-box .reply-func { position: absolute; top: 15px; right: 12px; } 
+.reply-box .reply-func>.btn-group { display: flex; column-gap: 12px; } 
+.reply-box .reply-write { margin-top: 16px; margin-bottom: 8px; } 
+.reply-box .reply-write .ta-group { border-color: #ededed; } 
+.reply-box .reply-write .ta-group .ta-ip { font-size: 13px; height: 60px; } 
+.reply-box .btn-big+.btn-big { margin-left: 0; } 
